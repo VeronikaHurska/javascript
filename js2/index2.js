@@ -1,14 +1,14 @@
 let users = [
-    { name: 'Anna', username:'GGGG', password: 'jfskhf' },
-    { name: 'Anna', username:'GGGG', password: 'jihdsnlnn' },
-    { name: 'Anna', username:'GGGG', password: 'j7ijjt8' },
-    { name: 'Anna', username:'GGGG', password: 'jkkkkk' },
-    { name: 'Anna', username:'GGGG', password: 'j5nrn' },
-    { name: 'Anna', username:'GGGG', password: 'j67nr' },
+    { name: 'Anna', username:'GGG66G', password: 'jfskhf' },
+    { name: 'Anna', username:'GGGнG', password: 'jihdsnlnn' },
+    { name: 'Anna', username:'GG6GG', password: 'j7ijjt8' },
+    { name: 'Anna', username:'GG6GG', password: 'jkkkkk' },
+    { name: 'Anna', username:'GG6GG', password: 'j5nrn' },
+    { name: 'Anna', username:'GGG6G', password: 'j67nr' },
     { name: 'Anna', username:'GGGG', password: 'jttuu' },
-    { name: 'Anna', username:'GGGG', password: 'jfgtdfhty' },
-    { name: 'Anna', username:'GGGG', password: 'erww' },
-    { name: 'Anna', username:'GGGG', password: 'erww34errg' },
+    { name: 'Anna', username:'GGG6G', password: 'jfgtdfhty' },
+    { name: 'Anna', username:'GGGууG', password: 'erww' },
+    { name: 'Anna', username:'GGGG5е6', password: 'erww34errg' },
 ]
  for( let i = 0; i < 10; i++ ){
      console.log(users[i]['password'])
