@@ -16,15 +16,13 @@ let users = [
     {name: 'max', age: 31, status: true}
 ];
 for (let i = 0; i < users.length; i++) {
-    if(users[i].status === true){
+    if(users[i].status ){
         document.write(`<div>${users[i].name} - true status </div>`)
+    }else {
+        document.write(`<div>${users[i].name} -false status </div>`);
     }
 }
-for (let i = 0; i < users.length; i++) {
-    if (users[i].status === false) {
-        document.write(`<div>${users[i].name} -false status </div>`)
-    }
-}
+
 for (let i = 0; i < users.length; i++) {
     if (users[i].age > 30) {
         document.write(`<div>${users[i].name} -  old dude  </div>`)
