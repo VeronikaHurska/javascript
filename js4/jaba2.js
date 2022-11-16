@@ -1,10 +1,17 @@
 let list = ['html', 'css', 'javascript', 'mysql', 'mongodb', 'react', 'angular', 'node.js'];
-for (let i = 0; i < list.length; i++) {
-        document.write(`<ul> <li>${list[i]}</li> </ul>`)
+
+
+document.write('<ul>');
+for (const listOfItem of listOfItems) {
+    document.write(
+        `
+            <li>
+                ${listOfItem}
+            </li>
+        `
+    );
 }
-
-
-
+document.write('</ul>');
 
 
 

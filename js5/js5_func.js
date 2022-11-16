@@ -65,11 +65,14 @@ function create_variable_list(text, number) {
                 <li>${text}</li>
             </ul>      
         `)
+    document.write(`<ul>`)
     for (let i = 3; i < number; i++) {
         document.write(`
-                <ul  style="margin: 0"><li>${text}</li></ul>
+                <li>${text}</li>
         `)
     }
+    document.write(`</ul>`)
+
 }
 create_variable_list('bebra',20);
 
@@ -100,24 +103,26 @@ object_block();
 
 // - створити функцію яка повертає найменьше число з масиву
 let array_min_num = [ 1,0.5,-100,45,223,323,-23213];
-function find_minimum(){
-    let min = array_min_num[0];
-    for (let i = 1; i < array_min_num.length; i++) {
-        if( min > array_min_num[i]){
-            min = array_min_num[i]
+function find_minimum(array){
+    let min = array[0];
+    for (let i = 1; i < array.length; i++) {
+        if( min > array[i]){
+            min = array[i]
         }
     }
-    console.log(min);
+    return min;
 }
-find_minimum();
+
+console.log(find_minimum(array_min_num));
 
 // - створити функцію яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад [1,2,10]->13
 let array_sum = [1,2,3,4];
 let sum = array_sum[0];
-function sum_num_of_array(){
-    for (let i = 1; i < array_sum.length; i++) {
-         sum = sum + array_sum[i];
+function sum_num_of_array(array){
+    for (let i = 1; i < array.length; i++) {
+         sum = sum + array[i];
     }
-    console.log(sum);
+    return sum;
 }
-sum_num_of_array();
+
+console.log(sum_num_of_array(array_sum));
