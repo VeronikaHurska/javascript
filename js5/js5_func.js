@@ -78,11 +78,15 @@ create_variable_list('bebra',20);
 
 // - створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список
 function array_list(array_primitive){
+    document.write(`<ul>`)
+
     for (let i = 0; i < array_primitive.length; i++) {
         document.write(`
                 <li>${array_primitive[i]}</li>
         `);
     }
+    document.write(`</ul>`)
+
 }
 array_list([ 1,4, 646,'safsefs',false]);
 
